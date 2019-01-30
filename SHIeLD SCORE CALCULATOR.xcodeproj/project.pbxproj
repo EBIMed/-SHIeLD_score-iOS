@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C1E062222025BF700E5C62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E062122025BF700E5C62F /* AppDelegate.swift */; };
+		9C1E062422025BF700E5C62F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E062322025BF700E5C62F /* ViewController.swift */; };
+		9C1E062722025BF700E5C62F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E062522025BF700E5C62F /* Main.storyboard */; };
+		9C1E062922025BFA00E5C62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E062822025BFA00E5C62F /* Assets.xcassets */; };
+		9C1E062C22025BFA00E5C62F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E062A22025BFA00E5C62F /* LaunchScreen.storyboard */; };
+		9C1E063722025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E063622025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORTests.swift */; };
+		9C1E064222025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E064122025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C1E063322025BFB00E5C62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1E061622025BF700E5C62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1E061D22025BF700E5C62F;
+			remoteInfo = "SHIeLD SCORE CALCULATOR";
+		};
+		9C1E063E22025BFB00E5C62F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C1E061622025BF700E5C62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C1E061D22025BF700E5C62F;
+			remoteInfo = "SHIeLD SCORE CALCULATOR";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C1E061E22025BF700E5C62F /* SHIeLD SCORE CALCULATOR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SHIeLD SCORE CALCULATOR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1E062122025BF700E5C62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C1E062322025BF700E5C62F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C1E062622025BF700E5C62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C1E062822025BFA00E5C62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C1E062B22025BFA00E5C62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C1E062D22025BFA00E5C62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1E063222025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHIeLD SCORE CALCULATORTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1E063622025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHIeLD_SCORE_CALCULATORTests.swift; sourceTree = "<group>"; };
+		9C1E063822025BFB00E5C62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1E063D22025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SHIeLD SCORE CALCULATORUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C1E064122025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHIeLD_SCORE_CALCULATORUITests.swift; sourceTree = "<group>"; };
+		9C1E064322025BFB00E5C62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C1E061B22025BF700E5C62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E062F22025BFB00E5C62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E063A22025BFB00E5C62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C1E061522025BF700E5C62F = {
+			isa = PBXGroup;
+			children = (
+				9C1E062022025BF700E5C62F /* SHIeLD SCORE CALCULATOR */,
+				9C1E063522025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests */,
+				9C1E064022025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests */,
+				9C1E061F22025BF700E5C62F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C1E061F22025BF700E5C62F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E061E22025BF700E5C62F /* SHIeLD SCORE CALCULATOR.app */,
+				9C1E063222025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests.xctest */,
+				9C1E063D22025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C1E062022025BF700E5C62F /* SHIeLD SCORE CALCULATOR */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E062122025BF700E5C62F /* AppDelegate.swift */,
+				9C1E062322025BF700E5C62F /* ViewController.swift */,
+				9C1E062522025BF700E5C62F /* Main.storyboard */,
+				9C1E062822025BFA00E5C62F /* Assets.xcassets */,
+				9C1E062A22025BFA00E5C62F /* LaunchScreen.storyboard */,
+				9C1E062D22025BFA00E5C62F /* Info.plist */,
+			);
+			path = "SHIeLD SCORE CALCULATOR";
+			sourceTree = "<group>";
+		};
+		9C1E063522025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E063622025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORTests.swift */,
+				9C1E063822025BFB00E5C62F /* Info.plist */,
+			);
+			path = "SHIeLD SCORE CALCULATORTests";
+			sourceTree = "<group>";
+		};
+		9C1E064022025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1E064122025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORUITests.swift */,
+				9C1E064322025BFB00E5C62F /* Info.plist */,
+			);
+			path = "SHIeLD SCORE CALCULATORUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C1E061D22025BF700E5C62F /* SHIeLD SCORE CALCULATOR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1E064622025BFB00E5C62F /* Build configuration list for PBXNativeTarget "SHIeLD SCORE CALCULATOR" */;
+			buildPhases = (
+				9C1E061A22025BF700E5C62F /* Sources */,
+				9C1E061B22025BF700E5C62F /* Frameworks */,
+				9C1E061C22025BF700E5C62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SHIeLD SCORE CALCULATOR";
+			productName = "SHIeLD SCORE CALCULATOR";
+			productReference = 9C1E061E22025BF700E5C62F /* SHIeLD SCORE CALCULATOR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C1E063122025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1E064922025BFB00E5C62F /* Build configuration list for PBXNativeTarget "SHIeLD SCORE CALCULATORTests" */;
+			buildPhases = (
+				9C1E062E22025BFB00E5C62F /* Sources */,
+				9C1E062F22025BFB00E5C62F /* Frameworks */,
+				9C1E063022025BFB00E5C62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C1E063422025BFB00E5C62F /* PBXTargetDependency */,
+			);
+			name = "SHIeLD SCORE CALCULATORTests";
+			productName = "SHIeLD SCORE CALCULATORTests";
+			productReference = 9C1E063222025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9C1E063C22025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C1E064C22025BFB00E5C62F /* Build configuration list for PBXNativeTarget "SHIeLD SCORE CALCULATORUITests" */;
+			buildPhases = (
+				9C1E063922025BFB00E5C62F /* Sources */,
+				9C1E063A22025BFB00E5C62F /* Frameworks */,
+				9C1E063B22025BFB00E5C62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C1E063F22025BFB00E5C62F /* PBXTargetDependency */,
+			);
+			name = "SHIeLD SCORE CALCULATORUITests";
+			productName = "SHIeLD SCORE CALCULATORUITests";
+			productReference = 9C1E063D22025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C1E061622025BF700E5C62F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = EBIMED;
+				TargetAttributes = {
+					9C1E061D22025BF700E5C62F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9C1E063122025BFB00E5C62F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9C1E061D22025BF700E5C62F;
+					};
+					9C1E063C22025BFB00E5C62F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9C1E061D22025BF700E5C62F;
+					};
+				};
+			};
+			buildConfigurationList = 9C1E061922025BF700E5C62F /* Build configuration list for PBXProject "SHIeLD SCORE CALCULATOR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C1E061522025BF700E5C62F;
+			productRefGroup = 9C1E061F22025BF700E5C62F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C1E061D22025BF700E5C62F /* SHIeLD SCORE CALCULATOR */,
+				9C1E063122025BFB00E5C62F /* SHIeLD SCORE CALCULATORTests */,
+				9C1E063C22025BFB00E5C62F /* SHIeLD SCORE CALCULATORUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C1E061C22025BF700E5C62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1E062C22025BFA00E5C62F /* LaunchScreen.storyboard in Resources */,
+				9C1E062922025BFA00E5C62F /* Assets.xcassets in Resources */,
+				9C1E062722025BF700E5C62F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E063022025BFB00E5C62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E063B22025BFB00E5C62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C1E061A22025BF700E5C62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1E062422025BF700E5C62F /* ViewController.swift in Sources */,
+				9C1E062222025BF700E5C62F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E062E22025BFB00E5C62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1E063722025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C1E063922025BFB00E5C62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C1E064222025BFB00E5C62F /* SHIeLD_SCORE_CALCULATORUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C1E063422025BFB00E5C62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1E061D22025BF700E5C62F /* SHIeLD SCORE CALCULATOR */;
+			targetProxy = 9C1E063322025BFB00E5C62F /* PBXContainerItemProxy */;
+		};
+		9C1E063F22025BFB00E5C62F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C1E061D22025BF700E5C62F /* SHIeLD SCORE CALCULATOR */;
+			targetProxy = 9C1E063E22025BFB00E5C62F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C1E062522025BF700E5C62F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1E062622025BF700E5C62F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C1E062A22025BFA00E5C62F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C1E062B22025BFA00E5C62F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C1E064422025BFB00E5C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C1E064522025BFB00E5C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C1E064722025BFB00E5C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4HVWNDNBH;
+				INFOPLIST_FILE = "SHIeLD SCORE CALCULATOR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Veloso.SHIeLD-SCORE-CALCULATOR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C1E064822025BFB00E5C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S4HVWNDNBH;
+				INFOPLIST_FILE = "SHIeLD SCORE CALCULATOR/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Veloso.SHIeLD-SCORE-CALCULATOR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9C1E064A22025BFB00E5C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SHIeLD SCORE CALCULATORTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Veloso.SHIeLD-SCORE-CALCULATORTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHIeLD SCORE CALCULATOR.app/SHIeLD SCORE CALCULATOR";
+			};
+			name = Debug;
+		};
+		9C1E064B22025BFB00E5C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SHIeLD SCORE CALCULATORTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Veloso.SHIeLD-SCORE-CALCULATORTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SHIeLD SCORE CALCULATOR.app/SHIeLD SCORE CALCULATOR";
+			};
+			name = Release;
+		};
+		9C1E064D22025BFB00E5C62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SHIeLD SCORE CALCULATORUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Veloso.SHIeLD-SCORE-CALCULATORUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SHIeLD SCORE CALCULATOR";
+			};
+			name = Debug;
+		};
+		9C1E064E22025BFB00E5C62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SHIeLD SCORE CALCULATORUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Veloso.SHIeLD-SCORE-CALCULATORUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SHIeLD SCORE CALCULATOR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C1E061922025BF700E5C62F /* Build configuration list for PBXProject "SHIeLD SCORE CALCULATOR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1E064422025BFB00E5C62F /* Debug */,
+				9C1E064522025BFB00E5C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1E064622025BFB00E5C62F /* Build configuration list for PBXNativeTarget "SHIeLD SCORE CALCULATOR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1E064722025BFB00E5C62F /* Debug */,
+				9C1E064822025BFB00E5C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1E064922025BFB00E5C62F /* Build configuration list for PBXNativeTarget "SHIeLD SCORE CALCULATORTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1E064A22025BFB00E5C62F /* Debug */,
+				9C1E064B22025BFB00E5C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C1E064C22025BFB00E5C62F /* Build configuration list for PBXNativeTarget "SHIeLD SCORE CALCULATORUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C1E064D22025BFB00E5C62F /* Debug */,
+				9C1E064E22025BFB00E5C62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C1E061622025BF700E5C62F /* Project object */;
+}
