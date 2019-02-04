@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var question1: UIButton!
     @IBOutlet weak var grafico: UIImageView!
     
+    
+    @IBAction func naoET(_ sender: Any) {
+    }
+    
+    @IBAction func simET(_ sender: Any) {
+    }
+    
     @IBAction func calculateTouch(_ sender: Any) {
         
      
