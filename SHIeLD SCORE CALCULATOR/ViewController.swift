@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var FIO2: UITextField!
     
     
-    //verificar esta entre 0 e 100
+    //verificar esta entre 0 e 500
     @IBAction func FIOChanged(_ sender: Any) {
         
         let value = Int(FIO2.text!)
@@ -34,11 +34,11 @@ class ViewController: UIViewController {
                 print("Mau")
             }
         }
-        
     }
     
-    //verificar esta entre 0 e 500
+    
     @IBAction func PAOChanged(_ sender: Any) {
+        
         let value = Int(PaO.text!)
         
         if( value != nil){
@@ -52,9 +52,9 @@ class ViewController: UIViewController {
         }
     }
     
+    
      //verificar esta entre 0 e 20
     @IBAction func LChanged(_ sender: Any) {
-        
         let value = Int(L.text!)
         
         if( value != nil){
@@ -66,8 +66,9 @@ class ViewController: UIViewController {
                 print("Mau")
             }
         }
-        
+    
     }
+    
     
     
     //verificar esta entre 0 e 250
@@ -84,6 +85,7 @@ class ViewController: UIViewController {
                 print("Mau")
             }
         }
+ 
         
     }
     
@@ -134,6 +136,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
+    
 
 
 }
