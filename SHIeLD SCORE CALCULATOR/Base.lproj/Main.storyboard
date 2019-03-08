@@ -49,6 +49,9 @@ Score</string>
                                                 <rect key="frame" x="85" y="78" width="218" height="31"/>
                                                 <nil key="textColor"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="SBPChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="O6a-Ex-Z5u"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HR:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy8-Ll-dHT">
                                                 <rect key="frame" x="36" y="128" width="28" height="21"/>
@@ -64,6 +67,9 @@ Score</string>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="HRChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="pZG-fJ-Xea"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shock index (HR/SBP)  =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnJ-vi-Bqk">
                                                 <rect key="frame" x="36" y="172" width="303" height="20"/>
@@ -85,6 +91,9 @@ Score</string>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="LChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="7Ne-oV-8Ra"/>
+                                                </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYE-QL-lHi">
                                                 <rect key="frame" x="30" y="209" width="23" height="21"/>
@@ -133,6 +142,9 @@ Score</string>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="PAOChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Thl-Ob-XnO"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FiO2: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ik-ml-vfE">
                                                 <rect key="frame" x="32" y="297" width="45" height="22"/>
@@ -148,6 +160,9 @@ Score</string>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="FIOChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="3Bb-ca-CF3"/>
+                                                </connections>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-fO-t2z">
                                                 <rect key="frame" x="319" y="252" width="28" height="26"/>
@@ -396,6 +411,11 @@ Score</string>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="FIO2" destination="iHE-Mq-urZ" id="QST-On-xgS"/>
+                        <outlet property="HR" destination="wer-fu-Mj9" id="l3K-2q-TXd"/>
+                        <outlet property="L" destination="pyY-BW-wDQ" id="HNg-Ay-Tz4"/>
+                        <outlet property="PaO" destination="XGc-be-Yrq" id="HsY-7r-CzI"/>
+                        <outlet property="SBP" destination="5Y5-NK-BQv" id="oqZ-Tz-bWi"/>
                         <outlet property="grafico" destination="5SA-w7-W23" id="et5-UR-vD7"/>
                         <outlet property="question1" destination="HYE-QL-lHi" id="Loz-Gs-DTS"/>
                     </connections>
