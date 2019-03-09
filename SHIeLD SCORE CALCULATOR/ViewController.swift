@@ -67,6 +67,29 @@ class ViewController: UIViewController {
     
 
     
+    @IBAction func ETNoClicked(_ sender: Any) {
+        
+        if(ETChoice == true){
+            ETChoice = false
+            ClickedNo(ButtonYes: ETYES , ButtonNo: ETNO)
+            
+        }
+    }
+    @IBAction func ETYesClicked(_ sender: Any) {
+        
+        
+        if(ETChoice == false){
+           
+            ETChoice = true
+            ClickedYes(ButtonYes: ETYES , ButtonNo: ETNO)
+        }
+        
+
+        
+    }
+    
+    
+    
     //verificar esta entre 0 e 500
     @IBAction func FIOChanged(_ sender: Any) {
         
