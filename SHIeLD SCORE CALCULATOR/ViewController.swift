@@ -44,6 +44,28 @@ class ViewController: UIViewController {
     var ENTChoice = true
     var RVLVChoice = false
     
+    func ClickedYes( ButtonYes: UIButton , ButtonNo: UIButton ){
+        
+        ButtonYes.backgroundColor  = self.view.tintColor
+        ButtonYes.setTitleColor(UIColor.white,  for: [] )
+        
+        ButtonNo.backgroundColor  = UIColor.white
+        ButtonNo.setTitleColor( self.view.tintColor,  for: [] )
+        
+        
+    }
+    
+    func ClickedNo( ButtonYes: UIButton , ButtonNo: UIButton ){
+
+        ButtonNo.backgroundColor  = self.view.tintColor
+        ButtonNo.setTitleColor(UIColor.white,  for: [] )
+        
+        ButtonYes.backgroundColor  = UIColor.white
+        ButtonYes.setTitleColor( self.view.tintColor,  for: [] )
+        
+    }
+    
+
     
     //verificar esta entre 0 e 500
     @IBAction func FIOChanged(_ sender: Any) {
