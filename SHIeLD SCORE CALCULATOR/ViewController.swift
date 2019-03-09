@@ -65,6 +65,23 @@ class ViewController: UIViewController {
         
     }
     
+    
+    @IBAction func RVYesClicked(_ sender: Any) {
+        if(RVLVChoice == false){
+            
+            RVLVChoice = true
+            ClickedYes(ButtonYes: RVYES , ButtonNo: RVNo)
+        }
+    }
+    
+    @IBAction func RVNoCliccked(_ sender: Any) {
+        if(RVLVChoice == true){
+            RVLVChoice = false
+            ClickedNo(ButtonYes: RVYES , ButtonNo: RVNo)
+            
+        }
+    }
+    
     @IBAction func ENTNoCliked(_ sender: Any) {
         if(ENTChoice == true){
             ENTChoice = false

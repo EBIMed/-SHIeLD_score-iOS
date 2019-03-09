@@ -106,7 +106,7 @@ Score</string>
                                                     <action selector="question1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqI-fe-ckM"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fg-fT-qhH">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fg-fT-qhH">
                                                 <rect key="frame" x="30" y="391" width="23" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="es0-fj-cmC"/>
@@ -176,7 +176,7 @@ Score</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2N-Qm-6yx">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2N-Qm-6yx">
                                                 <rect key="frame" x="30" y="466" width="23" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="zsc-Sx-6K5"/>
@@ -210,7 +210,7 @@ Score</string>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-b3-08a">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6m0-b3-08a">
                                                 <rect key="frame" x="30" y="426" width="23" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="MFG-TC-Cyu"/>
@@ -252,12 +252,18 @@ Score</string>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-WW-jno">
                                                 <rect key="frame" x="167" y="461" width="76" height="30"/>
                                                 <state key="normal" title="Yes"/>
+                                                <connections>
+                                                    <action selector="RVYesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFn-4r-gyM"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="43U-tQ-z9Q">
                                                 <rect key="frame" x="265" y="461" width="74" height="30"/>
                                                 <color key="backgroundColor" red="0.19719919559999999" green="0.53856235740000002" blue="0.98570042849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="No"/>
+                                                <connections>
+                                                    <action selector="RVNoCliccked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGd-Z6-FAQ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLl-wb-k2l">
                                                 <rect key="frame" x="167" y="385" width="76" height="30"/>
