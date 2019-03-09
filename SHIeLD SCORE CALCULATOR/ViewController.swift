@@ -65,7 +65,21 @@ class ViewController: UIViewController {
         
     }
     
-
+    @IBAction func ENTNoCliked(_ sender: Any) {
+        if(ENTChoice == true){
+            ENTChoice = false
+            ClickedNo(ButtonYes: ENTYES , ButtonNo: ENTNo)
+            
+        }
+    }
+    
+    @IBAction func ENTYesClicked(_ sender: Any) {
+        if(ENTChoice == false){
+            
+            ENTChoice = true
+            ClickedYes(ButtonYes: ENTYES , ButtonNo: ENTNo)
+        }
+    }
     
     @IBAction func ETNoClicked(_ sender: Any) {
         
