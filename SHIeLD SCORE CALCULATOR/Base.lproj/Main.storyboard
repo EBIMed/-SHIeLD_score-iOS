@@ -226,6 +226,7 @@ Score</string>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="No"/>
                                                 <connections>
+                                                    <action selector="ETNoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiZ-Yz-n4a"/>
                                                     <action selector="naoET:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pam-GF-mCc"/>
                                                 </connections>
                                             </button>
@@ -260,6 +261,7 @@ Score</string>
                                                 </constraints>
                                                 <state key="normal" title="Yes"/>
                                                 <connections>
+                                                    <action selector="ETYesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TA5-0g-exh"/>
                                                     <action selector="simET:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5E4-V5-2mc"/>
                                                 </connections>
                                             </button>
@@ -411,10 +413,16 @@ Score</string>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="ENTNo" destination="oSE-BJ-W4h" id="wbm-iV-qwG"/>
+                        <outlet property="ENTYES" destination="ftI-9B-Zjt" id="kqf-9N-sLj"/>
+                        <outlet property="ETNO" destination="0wh-El-aXM" id="A4c-Gr-86B"/>
+                        <outlet property="ETYES" destination="gLl-wb-k2l" id="AvG-Sq-12W"/>
                         <outlet property="FIO2" destination="iHE-Mq-urZ" id="QST-On-xgS"/>
                         <outlet property="HR" destination="wer-fu-Mj9" id="l3K-2q-TXd"/>
                         <outlet property="L" destination="pyY-BW-wDQ" id="HNg-Ay-Tz4"/>
                         <outlet property="PaO" destination="XGc-be-Yrq" id="HsY-7r-CzI"/>
+                        <outlet property="RVNo" destination="43U-tQ-z9Q" id="rJ3-Of-EUm"/>
+                        <outlet property="RVYES" destination="XEa-WW-jno" id="wLp-Ha-F2e"/>
                         <outlet property="SBP" destination="5Y5-NK-BQv" id="oqZ-Tz-bWi"/>
                         <outlet property="grafico" destination="5SA-w7-W23" id="et5-UR-vD7"/>
                         <outlet property="question1" destination="HYE-QL-lHi" id="Loz-Gs-DTS"/>

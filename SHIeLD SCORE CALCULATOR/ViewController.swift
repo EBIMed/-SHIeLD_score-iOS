@@ -31,6 +31,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var PaO: UITextField!
     @IBOutlet weak var FIO2: UITextField!
     
+    //Yes and No button
+    @IBOutlet  var ETYES: UIButton!
+    @IBOutlet  var ETNO: UIButton!
+    @IBOutlet  var ENTYES: UIButton!
+    @IBOutlet  var ENTNo: UIButton!
+    @IBOutlet  var RVYES: UIButton!
+    @IBOutlet  var RVNo: UIButton!
+    
+    
+    var ETChoice = false
+    var ENTChoice = true
+    var RVLVChoice = false
+    
     
     //verificar esta entre 0 e 500
     @IBAction func FIOChanged(_ sender: Any) {
