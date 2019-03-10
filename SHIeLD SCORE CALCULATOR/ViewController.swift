@@ -31,11 +31,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var question1: UIButton!
     @IBOutlet weak var grafico: UIImageView!
     //inputs
-    @IBOutlet weak var SBP: UITextField!
-    @IBOutlet weak var HR: UITextField!
-    @IBOutlet weak var L: UITextField!
-    @IBOutlet weak var PaO: UITextField!
-    @IBOutlet weak var FIO2: UITextField!
+    @IBOutlet  var SBP: UITextField!
+    @IBOutlet  var HR: UITextField!
+    @IBOutlet  var L: UITextField!
+    @IBOutlet  var PaO: UITextField!
+    @IBOutlet  var FIO2: UITextField!
     
     //imagens
     @IBOutlet weak var SBPImage: UIImageView!
@@ -223,11 +223,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func naoET(_ sender: Any) {
-    }
-    
-    @IBAction func simET(_ sender: Any) {
-    }
+ 
     
     @IBAction func calculateTouch(_ sender: Any) {
         

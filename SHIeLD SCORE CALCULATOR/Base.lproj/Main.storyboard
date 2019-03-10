@@ -227,7 +227,6 @@ Score</string>
                                                 <state key="normal" title="No"/>
                                                 <connections>
                                                     <action selector="ETNoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiZ-Yz-n4a"/>
-                                                    <action selector="naoET:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pam-GF-mCc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftI-9B-Zjt">
@@ -274,7 +273,6 @@ Score</string>
                                                 <state key="normal" title="Yes"/>
                                                 <connections>
                                                     <action selector="ETYesClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TA5-0g-exh"/>
-                                                    <action selector="simET:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5E4-V5-2mc"/>
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="correct" translatesAutoresizingMaskIntoConstraints="NO" id="sbW-40-Wi2">
