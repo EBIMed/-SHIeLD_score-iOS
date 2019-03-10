@@ -134,73 +134,79 @@ class ViewController: UIViewController {
     }
     
     
+    func CheckValue( field:UITextField , leftBond: Int , RightBond: Int) -> Bool{
+        
+        let value = Int(field.text!)
+        if(value != nil){
+            if( leftBond <= value! &&  RightBond >= value!){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        else{
+             return false
+        }
+    }
+        
+    
     
     //verificar esta entre 0 e 500
     @IBAction func FIOChanged(_ sender: Any) {
         
-        let value = Int(FIO2.text!)
-        
-        if( value != nil){
-            print(value!)
-            if( 0 <= value! &&  100 >= value!){
+        if( CheckValue( field: FIO2 ,  leftBond: 0 , RightBond: 100) ){
                 FIOImage.image = UIImage(named: "correct")
             }
             else{
                 FIOImage.image = UIImage(named: "wrong")
             }
-        }
+        
     }
     
+    
+
     
     @IBAction func PAOChanged(_ sender: Any) {
-        
-        let value = Int(PaO.text!)
-        
-        if( value != nil){
-            print(value!)
-            if( 0 <= value! &&  500 >= value!){
-                print("Bom")
+  
+            if( CheckValue( field: PaO ,  leftBond: 0 , RightBond: 500) ){
+                PAOImage.image = UIImage(named: "correct")
             }
             else{
-                print("Mau")
+                PAOImage.image = UIImage(named: "wrong")
             }
-        }
+        
     }
+    
+    
     
     
      //verificar esta entre 0 e 20
     @IBAction func LChanged(_ sender: Any) {
-        let value = Int(L.text!)
-        
-        if( value != nil){
-            print(value!)
-            if( 0 <= value! &&  20 >= value!){
-                print("Bom")
+       
+            if( CheckValue( field: L ,  leftBond: 0 , RightBond: 20) ){
+                LImage.image = UIImage(named: "correct")
             }
             else{
-                print("Mau")
+                LImage.image = UIImage(named: "wrong")
             }
-        }
+        
     
     }
     
     
+  
     
     //verificar esta entre 0 e 250
     @IBAction func HRChanged(_ sender: Any) {
         
-        let value = Int(HR.text!)
-        
-        if( value != nil){
-            print(value!)
-            if( 0 <= value! &&  250 >= value!){
-                print("Bom")
+  
+            if( CheckValue( field: HR ,  leftBond: 0 , RightBond: 250)){
+                HRImage.image = UIImage(named: "correct")
             }
             else{
-                print("Mau")
+                HRImage.image = UIImage(named: "wrong")
             }
-        }
- 
         
     }
     
@@ -209,17 +215,14 @@ class ViewController: UIViewController {
     //verificar esta entre 90 e 300
     @IBAction func SBPChanged(_ sender: Any) {
         
-        let value = Int(SBP.text!)
-        
-        if( value != nil){
-            print(value!)
-            if( 90 <= value! &&  300 >= value!){
-                print("Bom")
+      
+            if( CheckValue( field: SBP ,  leftBond: 90 , RightBond: 300)){
+                SBPImage.image = UIImage(named: "correct")
             }
             else{
-                print("Mau")
+                SBPImage.image = UIImage(named: "wrong")
             }
-        }
+        
     }
     
     
