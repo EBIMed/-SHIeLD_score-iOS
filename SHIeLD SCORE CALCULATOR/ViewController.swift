@@ -22,6 +22,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    // Index Calculators
+    @IBOutlet weak var ShockIndex: UILabel!
+    @IBOutlet weak var PAOIndex: UILabel!
+    
+    
     @IBOutlet weak var question1: UIButton!
     @IBOutlet weak var grafico: UIImageView!
     //inputs
@@ -30,6 +36,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var L: UITextField!
     @IBOutlet weak var PaO: UITextField!
     @IBOutlet weak var FIO2: UITextField!
+    
+    //imagens
+    @IBOutlet weak var SBPImage: UIImageView!
+    @IBOutlet weak var HRImage: UIImageView!
+    @IBOutlet weak var LImage: UIImageView!
+    @IBOutlet weak var PAOImage: UIImageView!
+    @IBOutlet weak var FIOImage: UIImageView!
+    
     
     //Yes and No button
     @IBOutlet  var ETYES: UIButton!

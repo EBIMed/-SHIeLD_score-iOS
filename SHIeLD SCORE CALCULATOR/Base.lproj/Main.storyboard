@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SHIeLD_SCORE_CALCULATOR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXv-fh-1R2">
-                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="730"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5d-bs-7VW">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
@@ -392,16 +392,16 @@ Score</string>
                                             <action selector="calculateTouch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IV3-nq-wZV"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5SA-w7-W23">
-                                        <rect key="frame" x="36" y="598" width="303" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5SA-w7-W23">
+                                        <rect key="frame" x="0.0" y="598" width="375" height="186"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="e7X-ly-Ac4"/>
+                                            <constraint firstAttribute="height" constant="186" id="e7X-ly-Ac4"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="Gec-pm-RDU" firstAttribute="leading" secondItem="5SA-w7-W23" secondAttribute="leading" id="46k-Bq-NyS"/>
-                                    <constraint firstItem="Gec-pm-RDU" firstAttribute="trailing" secondItem="5SA-w7-W23" secondAttribute="trailing" id="4x4-UI-2QO"/>
+                                    <constraint firstItem="Gec-pm-RDU" firstAttribute="leading" secondItem="5SA-w7-W23" secondAttribute="leading" constant="36" id="46k-Bq-NyS"/>
+                                    <constraint firstItem="Gec-pm-RDU" firstAttribute="trailing" secondItem="5SA-w7-W23" secondAttribute="trailing" constant="-36" id="4x4-UI-2QO"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="leading" secondItem="OXv-fh-1R2" secondAttribute="leading" constant="36" id="8dy-DY-KJb"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="centerX" secondItem="OXv-fh-1R2" secondAttribute="centerX" id="EDQ-vr-oVm"/>
                                     <constraint firstItem="C5d-bs-7VW" firstAttribute="leading" secondItem="OXv-fh-1R2" secondAttribute="leading" id="NeI-gr-sKa"/>
@@ -423,19 +423,26 @@ Score</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <size key="freeformSize" width="375" height="1000"/>
+                    <size key="freeformSize" width="375" height="750"/>
                     <connections>
                         <outlet property="ENTNo" destination="oSE-BJ-W4h" id="wbm-iV-qwG"/>
                         <outlet property="ENTYES" destination="ftI-9B-Zjt" id="kqf-9N-sLj"/>
                         <outlet property="ETNO" destination="0wh-El-aXM" id="A4c-Gr-86B"/>
                         <outlet property="ETYES" destination="gLl-wb-k2l" id="AvG-Sq-12W"/>
                         <outlet property="FIO2" destination="iHE-Mq-urZ" id="QST-On-xgS"/>
+                        <outlet property="FIOImage" destination="sbW-40-Wi2" id="77f-a1-fvK"/>
                         <outlet property="HR" destination="wer-fu-Mj9" id="l3K-2q-TXd"/>
+                        <outlet property="HRImage" destination="zWQ-Vj-GkR" id="WOU-xi-8EV"/>
                         <outlet property="L" destination="pyY-BW-wDQ" id="HNg-Ay-Tz4"/>
+                        <outlet property="LImage" destination="VeI-F4-Ny8" id="vWH-AF-YMH"/>
+                        <outlet property="PAOImage" destination="3w8-fO-t2z" id="OtU-bA-tY2"/>
+                        <outlet property="PAOIndex" destination="sW7-ZL-5rZ" id="zY7-R5-ONI"/>
                         <outlet property="PaO" destination="XGc-be-Yrq" id="HsY-7r-CzI"/>
                         <outlet property="RVNo" destination="43U-tQ-z9Q" id="rJ3-Of-EUm"/>
                         <outlet property="RVYES" destination="XEa-WW-jno" id="wLp-Ha-F2e"/>
                         <outlet property="SBP" destination="5Y5-NK-BQv" id="oqZ-Tz-bWi"/>
+                        <outlet property="SBPImage" destination="B63-Iy-ZA3" id="Zmw-7B-OdV"/>
+                        <outlet property="ShockIndex" destination="WnJ-vi-Bqk" id="SEZ-eJ-bYk"/>
                         <outlet property="grafico" destination="5SA-w7-W23" id="et5-UR-vD7"/>
                         <outlet property="question1" destination="HYE-QL-lHi" id="Loz-Gs-DTS"/>
                     </connections>
