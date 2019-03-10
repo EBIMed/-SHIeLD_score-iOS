@@ -164,8 +164,8 @@ class ViewController: UIViewController {
             
             let fio:Double = Double( FIO2.text!)!
             let pao:Double = Double( PaO.text!)!
-            Hypoxaemia = fio / pao
-            PAOIndex.text = "PaO2/FiO2 = " + String(Hypoxaemia).prefix(4)
+            Hypoxaemia = 100.0 *   pao  / fio
+            PAOIndex.text = "PaO2/FiO2 = " + String(Hypoxaemia).prefix(8)
         }
     }
     
