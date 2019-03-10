@@ -283,6 +283,7 @@ class ViewController: UIViewController {
                 }}))
             self.present(alert, animated: true, completion: nil)
         }
+        
             //Veririca se os valores estao bem
         else if( CheckValue( field: SBP ,  leftBond: 90 , RightBond: 300) &&
             CheckValue( field: HR ,  leftBond: 0 , RightBond: 250) &&
@@ -290,21 +291,28 @@ class ViewController: UIViewController {
             CheckValue( field: PaO ,  leftBond: 0 , RightBond: 500) &&
             CheckValue( field: FIO2 ,  leftBond: 0 , RightBond: 100) ){
             
-            let alert = UIAlertController(title: "Aviso", message: "Calcula", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-                switch action.style{
-                case .default:
-                    print("default")
-                    
-                case .cancel:
-                    print("cancel")
-                    
-                case .destructive:
-                    print("destructive")
-                    
-                    
-                }}))
-            self.present(alert, animated: true, completion: nil)
+            //Calcular
+            var cvd = 0.0
+            
+            
+            if( ETChoice && ENTChoice && RVLVChoice){
+                cvd = 1.0
+            }
+            
+            let l:Double = Double(L.text!)!
+            var formula =  1.734 * cvd  +  0.321 * l  - 0.008 * self.Hypoxaemia - 2.383
+           
+            
+            
+            if(self.SHIndex >= 1.00){
+                formula += 1.204 * self.SHIndex
+            }
+            
+            //Probability of event
+            let prob = (exp(Double(formula)) / (1 + exp(Double(formula))))*100
+            
+            
+            
             
         }
         else{
