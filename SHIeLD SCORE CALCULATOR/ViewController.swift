@@ -6,6 +6,9 @@
 //  Copyright © 2019 EBIMED. All rights reserved.
 //
 
+import UIKit
+import Foundation //Generic
+
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
@@ -18,7 +21,7 @@ extension UIViewController {
     }
 }
 
-import UIKit
+
 
 class ViewController: UIViewController {
 
@@ -262,7 +265,6 @@ class ViewController: UIViewController {
     
     @IBAction func calculateTouch(_ sender: Any) {
         
-     
         //Verifica se um dos parametros esta vazio
         if( SBP.text == "" || HR.text == "" || L.text == "" || PaO.text == "" || FIO2.text == ""){
             let alert = UIAlertController(title: "Aviso", message: "Os campos têm de estar preenchidos", preferredStyle: .alert)
@@ -324,10 +326,14 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
         }
-      
-     
         
     }
+    
+    
+    
+    
+      
+ 
     
     @IBAction func question1Clicked(_ sender: Any) {
         
