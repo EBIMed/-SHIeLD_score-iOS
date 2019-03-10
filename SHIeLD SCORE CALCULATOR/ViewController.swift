@@ -231,7 +231,69 @@ class ViewController: UIViewController {
     @IBAction func calculateTouch(_ sender: Any) {
         
      
-        grafico.image = UIImage(named: "r")
+        //Verifica se um dos parametros esta vazio
+        if( SBP.text == "" || HR.text == "" || L.text == "" || PaO.text == "" || FIO2.text == ""){
+            let alert = UIAlertController(title: "Aviso", message: "Os campos têm de estar preenchidos", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                    
+                }}))
+            self.present(alert, animated: true, completion: nil)
+        }
+            //Veririca se os valores estao bem
+        else if( CheckValue( field: SBP ,  leftBond: 90 , RightBond: 300) &&
+            CheckValue( field: HR ,  leftBond: 0 , RightBond: 250) &&
+            CheckValue( field: L ,  leftBond: 0 , RightBond: 20) &&
+            CheckValue( field: PaO ,  leftBond: 0 , RightBond: 500) &&
+            CheckValue( field: FIO2 ,  leftBond: 0 , RightBond: 100) ){
+            
+            let alert = UIAlertController(title: "Aviso", message: "Calcula", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                    
+                }}))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        else{
+            
+            let alert = UIAlertController(title: "Aviso", message: "Um dos parâmetros não está correcto", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                switch action.style{
+                case .default:
+                    print("default")
+                    
+                case .cancel:
+                    print("cancel")
+                    
+                case .destructive:
+                    print("destructive")
+                    
+                    
+                }}))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+      
+     
         
     }
     
