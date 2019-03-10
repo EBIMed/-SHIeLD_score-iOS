@@ -143,10 +143,10 @@ class ViewController: UIViewController {
         if( value != nil){
             print(value!)
             if( 0 <= value! &&  100 >= value!){
-                print("Bom")
+                FIOImage.image = UIImage(named: "correct")
             }
             else{
-                print("Mau")
+                FIOImage.image = UIImage(named: "wrong")
             }
         }
     }
