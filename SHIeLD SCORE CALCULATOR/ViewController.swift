@@ -27,6 +27,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var ShockIndex: UILabel!
     @IBOutlet weak var PAOIndex: UILabel!
     
+    //Shock Index
+    var SHIndex:Double = 0.0
+    var Hypoxaemia:Double = 0.0
+    
     
     @IBOutlet weak var question1: UIButton!
     @IBOutlet weak var grafico: UIImageView!

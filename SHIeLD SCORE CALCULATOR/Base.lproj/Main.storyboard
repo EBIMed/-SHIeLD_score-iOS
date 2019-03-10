@@ -396,15 +396,25 @@ Score</string>
                                             <constraint firstAttribute="height" constant="186" id="e7X-ly-Ac4"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hx9-Am-Os3">
+                                        <rect key="frame" x="0.0" y="576" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Hx9-Am-Os3" firstAttribute="leading" secondItem="OXv-fh-1R2" secondAttribute="leading" id="1hz-Lg-eSS"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="leading" secondItem="5SA-w7-W23" secondAttribute="leading" constant="36" id="46k-Bq-NyS"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="trailing" secondItem="5SA-w7-W23" secondAttribute="trailing" constant="-36" id="4x4-UI-2QO"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="leading" secondItem="OXv-fh-1R2" secondAttribute="leading" constant="36" id="8dy-DY-KJb"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="centerX" secondItem="OXv-fh-1R2" secondAttribute="centerX" id="EDQ-vr-oVm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hx9-Am-Os3" secondAttribute="trailing" id="Fzj-Qb-c8v"/>
                                     <constraint firstItem="C5d-bs-7VW" firstAttribute="leading" secondItem="OXv-fh-1R2" secondAttribute="leading" id="NeI-gr-sKa"/>
                                     <constraint firstAttribute="bottom" secondItem="C5d-bs-7VW" secondAttribute="bottom" constant="-20" id="VcK-bH-dKq"/>
+                                    <constraint firstItem="Hx9-Am-Os3" firstAttribute="centerX" secondItem="Gec-pm-RDU" secondAttribute="centerX" id="VfB-oF-otx"/>
                                     <constraint firstAttribute="trailing" secondItem="C5d-bs-7VW" secondAttribute="trailing" id="XZi-Vk-qc4"/>
+                                    <constraint firstItem="Hx9-Am-Os3" firstAttribute="top" secondItem="Gec-pm-RDU" secondAttribute="bottom" constant="8" symbolic="YES" id="eNn-qV-Cly"/>
                                     <constraint firstItem="Gec-pm-RDU" firstAttribute="top" secondItem="OXv-fh-1R2" secondAttribute="top" constant="538" id="ftW-BS-g3X"/>
                                     <constraint firstItem="C5d-bs-7VW" firstAttribute="top" secondItem="OXv-fh-1R2" secondAttribute="top" id="iCN-sE-NQp"/>
                                     <constraint firstItem="C5d-bs-7VW" firstAttribute="centerX" secondItem="Gec-pm-RDU" secondAttribute="centerX" id="k5O-wL-sm8"/>
@@ -441,6 +451,7 @@ Score</string>
                         <outlet property="SBP" destination="5Y5-NK-BQv" id="oqZ-Tz-bWi"/>
                         <outlet property="SBPImage" destination="B63-Iy-ZA3" id="Zmw-7B-OdV"/>
                         <outlet property="ShockIndex" destination="WnJ-vi-Bqk" id="SEZ-eJ-bYk"/>
+                        <outlet property="TextResult" destination="Hx9-Am-Os3" id="Wt8-XL-mwx"/>
                         <outlet property="grafico" destination="5SA-w7-W23" id="et5-UR-vD7"/>
                         <outlet property="question1" destination="HYE-QL-lHi" id="Loz-Gs-DTS"/>
                     </connections>
