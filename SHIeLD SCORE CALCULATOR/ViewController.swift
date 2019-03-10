@@ -313,8 +313,32 @@ class ViewController: UIViewController {
             
             
             
+            var percentile:String
+            var risk:String
+            
+            if(prob <= 1.00) {
+                percentile = "1st percentile" ;
+                risk = "lowest risk subgroup";
+            }
+            else if(prob <= 3.33){
+                percentile = "2nd percentile";
+                risk = "intermediate risk subgroup";
+            }
+            else {
+                percentile = "3rd percentile";
+                risk = "highest risk subgroup";
+            }
+            
+            //Mostrar Texto
+            
+            TextResult.text = "SHIeLD score: " + String(prob).prefix(5) + "%\n" +
+                "A patient with a " + String(prob).prefix(5) + "% of predicted risk of PE-related mortality and/or rescue trombolisis at 30-days would integrate the " +
+                percentile + " which corresponds to the " + risk
+            
+    
             
         }
+        
         else{
             
             let alert = UIAlertController(title: "Aviso", message: "Um dos parâmetros não está correcto", preferredStyle: .alert)
