@@ -336,6 +336,20 @@ class ViewController: UIViewController {
                 percentile + " which corresponds to the " + risk
             
     
+            //Mostrar imagem
+            
+            if(prob <= 1.00){
+              grafico.image = UIImage(named: "green")
+            }
+            else if(prob <= 3.33){
+               grafico.image = UIImage(named: "Amarelo")
+            }
+          
+            else{
+               grafico.image = UIImage(named: "red")
+            }
+          
+            
             
         }
         
