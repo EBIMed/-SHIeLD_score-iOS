@@ -57,10 +57,13 @@ class ViewController: UIViewController {
     @IBOutlet  var RVYES: UIButton!
     @IBOutlet  var RVNo: UIButton!
     
-    
+    //Selected Options
     var ETChoice = false
     var ENTChoice = true
     var RVLVChoice = false
+    
+    //Mostrar texto finak
+    @IBOutlet weak var TextResult: UILabel!
     
     func ClickedYes( ButtonYes: UIButton , ButtonNo: UIButton ){
         
@@ -153,7 +156,18 @@ class ViewController: UIViewController {
              return false
         }
     }
+    
+  
+    func CalcHypoxaemia(){
         
+        if( CheckValue( field: FIO2 ,  leftBond: 0 , RightBond: 100) && CheckValue( field: PaO ,  leftBond: 0 , RightBond: 500)){
+            
+            let fio:Double = Double( FIO2.text!)!
+            let pao:Double = Double( PaO.text!)!
+            Hypoxaemia = fio / pao
+            PAOIndex.text = "PaO2/FiO2 = " + String(Hypoxaemia).prefix(4)
+        }
+    }
     
     
     //verificar esta entre 0 e 500
@@ -161,6 +175,7 @@ class ViewController: UIViewController {
         
         if( CheckValue( field: FIO2 ,  leftBond: 0 , RightBond: 100) ){
                 FIOImage.image = UIImage(named: "correct")
+                CalcHypoxaemia()
             }
             else{
                 FIOImage.image = UIImage(named: "wrong")
@@ -175,6 +190,7 @@ class ViewController: UIViewController {
   
             if( CheckValue( field: PaO ,  leftBond: 0 , RightBond: 500) ){
                 PAOImage.image = UIImage(named: "correct")
+                CalcHypoxaemia()
             }
             else{
                 PAOImage.image = UIImage(named: "wrong")
@@ -200,6 +216,16 @@ class ViewController: UIViewController {
     
     
   
+    func CalcShockIndex(){
+        
+        if(CheckValue( field: HR ,  leftBond: 0 , RightBond: 250) && CheckValue( field: SBP ,  leftBond: 90 , RightBond: 300)){
+            
+            let hr:Double = Double(HR.text!)!
+            let sbp:Double = Double(SBP.text!)!
+            SHIndex = hr / sbp
+            ShockIndex.text = "Shock index (HR/SBP)  = " + String(SHIndex).prefix(4)
+        }
+    }
     
     //verificar esta entre 0 e 250
     @IBAction func HRChanged(_ sender: Any) {
@@ -207,6 +233,7 @@ class ViewController: UIViewController {
   
             if( CheckValue( field: HR ,  leftBond: 0 , RightBond: 250)){
                 HRImage.image = UIImage(named: "correct")
+                CalcShockIndex()
             }
             else{
                 HRImage.image = UIImage(named: "wrong")
@@ -222,6 +249,7 @@ class ViewController: UIViewController {
       
             if( CheckValue( field: SBP ,  leftBond: 90 , RightBond: 300)){
                 SBPImage.image = UIImage(named: "correct")
+                CalcShockIndex()
             }
             else{
                 SBPImage.image = UIImage(named: "wrong")
