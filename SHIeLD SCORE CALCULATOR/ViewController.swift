@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     // Index Calculators
     @IBOutlet weak var ShockIndex: UILabel!
     @IBOutlet weak var PAOIndex: UILabel!
+    @IBOutlet weak var tabela: UIImageView!
     
     //Shock Index
     var SHIndex:Double = 0.0
@@ -338,6 +339,8 @@ class ViewController: UIViewController {
     
             //Mostrar imagem
             
+            tabela.isHidden = false
+            
             if(prob <= 1.00){
               grafico.image = UIImage(named: "green")
             }
@@ -395,6 +398,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        tabela.isHidden = true
         
     }
     
